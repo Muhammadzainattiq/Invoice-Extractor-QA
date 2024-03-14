@@ -1,5 +1,4 @@
 import streamlit as st
-import os
 import pathlib
 import textwrap
 from PIL import Image
@@ -30,6 +29,11 @@ def set_image_data(uploaded_image):
 
 
 st.set_page_config(page_title= 'Invoice Extractor')
+created_style = """
+    color: #888888; /* Light gray color */
+    font-size: 99px; /* Increased font size */
+""" 
+st.markdown("<p style='{}'>➡️created by 'Muhammad Zain Attiq'</p>".format(created_style), unsafe_allow_html=True)
 prompt = st.text_input("Input Prompt: ", key = "input")
 uploaded_image = st.file_uploader("Choose an image...", type= ['jpg', "png", 'jpeg'])
     
