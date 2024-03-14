@@ -34,6 +34,15 @@ created_style = """
     font-size: 99px; /* Increased font size */
 """ 
 st.markdown("<p style='{}'>➡️created by 'Muhammad Zain Attiq'</p>".format(created_style), unsafe_allow_html=True)
+title_style = """
+    color: #008080; /* Dark cyan color */
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+"""
+st.markdown("<h1 style='{}'>Text Similarity Checker</h1>".format(title_style), unsafe_allow_html=True)
+
 prompt = st.text_input("Input Prompt: ", key = "input")
 uploaded_image = st.file_uploader("Choose an image...", type= ['jpg', "png", 'jpeg'])
     
