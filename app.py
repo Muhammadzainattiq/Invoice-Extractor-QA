@@ -35,7 +35,7 @@ created_style = """
 """ 
 st.markdown("<p style='{}'>➡️created by 'Muhammad Zain Attiq'</p>".format(created_style), unsafe_allow_html=True)
 title_style = """
-    color: #008080; /* Dark cyan color */
+    color: #8B13CC; /* Dark cyan color */
     font-size: 36px;
     font-weight: bold;
     text-align: center;
