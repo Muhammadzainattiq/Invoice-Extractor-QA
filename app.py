@@ -41,7 +41,7 @@ title_style = """
     text-align: center;
     margin-bottom: 30px;
 """
-st.markdown("<h1 style='{}'>Text Similarity Checker</h1>".format(title_style), unsafe_allow_html=True)
+st.markdown("<h1 style='{}'>Invoices info Extractor</h1>".format(title_style), unsafe_allow_html=True)
 
 prompt = st.text_input("Input Prompt: ", key = "input")
 uploaded_image = st.file_uploader("Choose an image...", type= ['jpg', "png", 'jpeg'])
