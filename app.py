@@ -42,7 +42,7 @@ title_style = """
     margin-bottom: 30px;
 """
 st.markdown("<h1 style='{}'>Invoices info Extractor</h1>".format(title_style), unsafe_allow_html=True)
-with st.expander:
+with st.expander("About the app"):
     st.info("This app can extract and present any information you required from an invoice. You will just upload the invoice picture and it will read it and you will be able to query any of its part.")
 prompt = st.text_input("Input Prompt: ", key = "input")
 uploaded_image = st.file_uploader("Choose an image...", type= ['jpg', "png", 'jpeg'])
